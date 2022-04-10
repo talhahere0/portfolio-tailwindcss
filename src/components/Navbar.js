@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
+import { Link } from "react-scroll";
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleToggle = () => setNav(!nav);
@@ -9,9 +11,22 @@ const Navbar = () => {
       <div className=" text-[#e359eb] font-[poppins] text-2xl">TalHa_dev</div>
       <div className="">
         <ul className="hidden md:flex font-[poppins] gap-5 cursor-pointer text-[#e359eb]">
-          <li>Home</li>
-          <li>About</li>
-          <li>Skills</li>
+          <li>
+            <Link to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </li>
+          <li>
+            {" "}
+            <Link to="about" smooth={true} duration={500}>
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="skills" smooth={true} duration={500}>
+              Skills
+            </Link>
+          </li>
           <li>Work</li>
           <li>Contact</li>
         </ul>
