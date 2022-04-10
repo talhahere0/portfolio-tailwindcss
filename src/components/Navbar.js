@@ -17,7 +17,6 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            {" "}
             <Link to="about" smooth={true} duration={500}>
               About
             </Link>
@@ -43,8 +42,24 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#1A132F] flex justify-center flex-col items-center cursor-pointer"
         }
       >
-        <li className="py-6 text-2xl text-[#e359eb]">Home</li>
-        <li className="py-6 text-2xl text-[#e359eb]">Skills</li>
+        <li className="py-6 text-2xl text-[#e359eb]">
+          {" "}
+          <Link onClick={handleToggle} to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className="py-6 text-2xl text-[#e359eb]">
+          {" "}
+          <Link onClick={handleToggle} to="about" smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li className="py-6 text-2xl text-[#e359eb]">
+          {" "}
+          <Link onClick={handleToggle} to="skills" smooth={true} duration={500}>
+            Skills
+          </Link>
+        </li>
         <li className="py-6 text-2xl text-[#e359eb]">Contact</li>
         <li className="py-6 text-2xl text-[#e359eb]">Experience</li>
       </ul>
