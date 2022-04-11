@@ -26,8 +26,8 @@ const Navbar = () => {
               Skills
             </Link>
           </li>
-          <li>Work</li>
-          <li>Contact</li>
+          {/*<li>Work</li>
+          <li>Contact</li>*/}
         </ul>
       </div>
 
@@ -60,8 +60,8 @@ const Navbar = () => {
             Skills
           </Link>
         </li>
-        <li className="py-6 text-2xl text-[#e359eb]">Contact</li>
-        <li className="py-6 text-2xl text-[#e359eb]">Experience</li>
+        {/*<li className="py-6 text-2xl text-[#e359eb]">Contact</li>
+      <li className="py-6 text-2xl text-[#e359eb]">Experience</li>*/}
       </ul>
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
